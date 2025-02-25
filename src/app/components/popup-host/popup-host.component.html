@@ -1,5 +1,6 @@
-<div class="popup-host" [class.empty]="!template()">
+<div class="popup-host" [class.empty]="!isPopupOpen">
     <div class="content-wrapper">
         <ng-container #viewport></ng-container>
+        <button (click)="closePopup()">X</button>
     </div>
 </div>
